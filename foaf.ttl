@@ -1,1 +1,23 @@
-Krste
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me>
+        a                       foaf:Person ;
+        foaf:depiction          <https://github.com/Krste27/WBS/blob/main/photo.jpg> ;
+        foaf:family_name        "Simeonov" ;
+        foaf:givenname          "Krste" ;
+        foaf:mbox_sha1sum       "03af61840a2d6009a77a557862982c5737dc4d82" ;
+        foaf:name               "Krste Simeonov" ;
+        foaf:phone              <tel:+389-71-907-307> ;
+        foaf:schoolHomepage     <http://jsandanski-strumica.edu.mk/> ;
+        foaf:title              "Mr" ;
+        foaf:workplaceHomepage  <https://www.mca.mk/> .
+
+<https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl>
+        a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> ;
+        foaf:primaryTopic     <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> .
