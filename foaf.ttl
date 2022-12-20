@@ -1,23 +1,39 @@
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix admin: <http://webns.net/mvcb/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-
-<https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me>
-        a                       foaf:Person ;
-        foaf:depiction          <https://github.com/Krste27/WBS/blob/main/photo.jpg> ;
-        foaf:family_name        "Simeonov" ;
-        foaf:givenname          "Krste" ;
-        foaf:mbox_sha1sum       "03af61840a2d6009a77a557862982c5737dc4d82" ;
-        foaf:name               "Krste Simeonov" ;
-        foaf:phone              <tel:+389-71-907-307> ;
-        foaf:schoolHomepage     <http://jsandanski-strumica.edu.mk/> ;
-        foaf:title              "Mr" ;
-        foaf:workplaceHomepage  <https://www.mca.mk/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl>
-        a                     foaf:PersonalProfileDocument ;
-        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
-        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
-        foaf:maker            <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> ;
-        foaf:primaryTopic     <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> .
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/Krste27/WBS/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Krste  Simeonov" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Krste " ;
+  foaf:family_name "Simeonov" ;
+  foaf:nick "Krste" ;
+  foaf:mbox_sha1sum "03af61840a2d6009a77a557862982c5737dc4d82" ;
+  foaf:depiction <https://github.com/Krste27/WBS/blob/main/photo.jpg> ;
+  foaf:phone <tel:+389-71-907-307> ;
+  foaf:workplaceHomepage <https://www.mca.mk/> ;
+  foaf:schoolHomepage <http://jsandanski-strumica.edu.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Emilijan Koteski" ;
+    foaf:mbox_sha1sum "340295c3802ab175cbd1e09325d4c1d667b464d4" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/bratuchedot/foaf/master/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Petar Partaloski" ;
+    foaf:mbox_sha1sum "ad9a09592cf78b49d73ccbb280d6a1970724884a" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/partaloski/foaf/master/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Martin Nikolov" ;
+    foaf:mbox_sha1sum "11a498a22b687837b5686f52c6b72f3801ffb229" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl>
+  ] .
